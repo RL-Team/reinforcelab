@@ -1,16 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Sora } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter"
-});
-
-const sora = Sora({
-  subsets: ["latin"],
-  variable: "--font-sora"
-});
 
 export const metadata: Metadata = {
   title: "ReinforceLab | Reinforcement Learning That Scales",
@@ -22,11 +11,10 @@ export default function RootLayout({
   children
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${sora.variable}`}>
+    <html lang="en">
       <body className="bg-brand-charcoal text-white selection:bg-brand-indigo/80 selection:text-white">
         {children}
       </body>
     </html>
   );
 }
-
