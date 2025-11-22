@@ -22,6 +22,20 @@ body {
   @apply font-display text-3xl tracking-tight text-white md:text-4xl;
 }
 
+/* Brand symbols */
+.brand-symbol {
+  font-family: "Cinzel", "Garamond", "Georgia", serif;
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #e7e7ec;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3rem;
+  min-height: 3rem;
+}
+
 @keyframes bg-pan {
   0% {
     background-position: 0% 50%;
