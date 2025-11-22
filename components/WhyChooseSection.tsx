@@ -4,6 +4,7 @@
 import { metrics } from "@/content/data";
 import { fadeInUp, staggerChildren } from "@/lib/motion";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export function WhyChooseSection() {
   return (
@@ -58,6 +59,16 @@ export function WhyChooseSection() {
               whileHover={{ y: -8, scale: 1.03 }}
               className="rounded-2xl bg-white/5 p-4"
             >
+              {metric.icon ? (
+                <div className="mb-3 h-10 w-10 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+                  <Image
+                    src={metric.icon}
+                    alt={metric.label}
+                    width={40}
+                    height={40}
+                  />
+                </div>
+              ) : null}
               <p className="text-xs uppercase tracking-[0.2em] text-white/50">
                 {metric.label}
               </p>

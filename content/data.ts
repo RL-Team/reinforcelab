@@ -176,19 +176,22 @@ export const metrics = [
     label: "AgentOps Observability",
     stat: "45+",
     description:
-      "prebuilt monitors track policy drift, fairness, governance, and ROI in flight."
+      "prebuilt monitors track policy drift, fairness, governance, and ROI in flight.",
+    icon: "/icon-guardrails.svg"
   },
   {
     label: "Agentic Guardrails",
     stat: "Zero-Trust",
     description:
-      "alignment controls, safety throttles, and runtime prevention for harmful actions."
+      "alignment controls, safety throttles, and runtime prevention for harmful actions.",
+    icon: "/icon-guardrails.svg"
   },
   {
     label: "ROI Realization",
     stat: "8-12 mo",
     description:
-      "time to measurable uplift across pricing, operations, logistics, and engagement programs."
+      "time to measurable uplift across pricing, operations, logistics, and engagement programs.",
+    icon: "/icon-guardrails.svg"
   }
 ];
 

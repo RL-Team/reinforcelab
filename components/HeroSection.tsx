@@ -3,6 +3,7 @@
 
 import { motion } from "framer-motion";
 import { fadeInUp, staggerChildren } from "@/lib/motion";
+import Image from "next/image";
 
 export function HeroSection() {
   return (
@@ -59,6 +60,29 @@ export function HeroSection() {
           >
             Explore Services
           </a>
+        </motion.div>
+        <motion.div
+          variants={fadeInUp}
+          className="mt-10 flex flex-col gap-3 text-white/60"
+        >
+          <span className="text-xs uppercase tracking-[0.3em] text-white/50">
+            Trusted by adaptive intelligence teams
+          </span>
+          <div className="flex flex-wrap items-center gap-3">
+            {[1, 2, 3, 4].map((id) => (
+              <div
+                key={id}
+                className="relative h-10 w-36 overflow-hidden rounded-xl border border-white/10 bg-white/5"
+              >
+                <Image
+                  src="/logos/partner-grid.svg"
+                  alt="Partner logo"
+                  fill
+                  sizes="160px"
+                />
+              </div>
+            ))}
+          </div>
         </motion.div>
       </motion.div>
       <motion.div
