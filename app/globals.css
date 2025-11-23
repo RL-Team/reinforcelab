@@ -57,12 +57,17 @@ a {
   color: var(--text-dark);
   padding: 30px 20px;
   border-top: 2px solid #dca47e;
+  width: 100%;
 }
 
 .anime-footer a {
   color: var(--text-dark);
   margin-right: 16px;
   text-decoration: none;
+}
+
+.anime-footer * {
+  color: var(--text-dark);
 }
 
 /* Sections */
