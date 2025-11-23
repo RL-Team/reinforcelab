@@ -2,7 +2,6 @@
 "use client";
 
 import Link from "next/link";
-import { BrandMark } from "@/components/BrandMark";
 
 export function Footer() {
   return (
@@ -10,9 +9,7 @@ export function Footer() {
       <div className="section-container flex flex-col gap-8 py-12 md:flex-row md:items-center md:justify-between">
         <div>
           <div className="flex items-center gap-3">
-            <div className="h-8 w-8">
-              <BrandMark className="h-8 w-8" />
-            </div>
+            <div className="brand-symbol text-4xl leading-none">π</div>
             <p className="font-display text-lg">ReinforceLab</p>
           </div>
           <p className="mt-3 text-xs text-white/50">

@@ -4,7 +4,6 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { navLinks } from "@/content/data";
-import { BrandMark } from "@/components/BrandMark";
 
 export function NavBar() {
   return (
@@ -16,9 +15,7 @@ export function NavBar() {
           transition={{ duration: 0.4 }}
           className="flex items-center gap-3"
         >
-          <div className="h-10 w-10">
-            <BrandMark className="h-10 w-10 drop-shadow-lg" />
-          </div>
+          <div className="brand-symbol text-5xl leading-none">π</div>
           <span className="font-display text-xl">ReinforceLab</span>
         </motion.div>
         <nav className="hidden items-center gap-8 text-sm font-medium text-white/80 lg:flex">

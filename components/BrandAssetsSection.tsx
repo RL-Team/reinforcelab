@@ -3,8 +3,6 @@
 
 import { motion } from "framer-motion";
 import { fadeInUp, staggerChildren, viewportConfig } from "@/lib/motion";
-import { BrandMark } from "@/components/BrandMark";
-
 const symbols = [
   { title: "Logomark", body: "ReinforceLab primary mark", glyph: "π" },
   { title: "Policy Graph", body: "Policy convergence and alignment", glyph: "Φ" },
