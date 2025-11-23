@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export function SolutionsGallery() {
   return (
-    <section id="solutions" className="section-container">
+    <section id="solutions" className="anime-section solutions section-container">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -17,13 +17,14 @@ export function SolutionsGallery() {
       >
         <motion.span
           variants={fadeInUp}
-          className="text-sm font-semibold uppercase tracking-[0.3em] text-brand-teal"
+          className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--flat-lime)]"
         >
           Solutions
         </motion.span>
         <motion.h2 variants={fadeInUp} className="section-title mt-4">
           Built-for-Impact RL Solution Gallery
         </motion.h2>
+        <div className="title-underline" aria-hidden="true" />
         <motion.p variants={fadeInUp} className="mt-4 text-white/70">
           Each solution ships with embedded measurement, governance, and
           Agentic Guardrails to jumpstart production impact across growth,
@@ -42,7 +43,7 @@ export function SolutionsGallery() {
             key={solution.name}
             variants={fadeInUp}
             whileHover={{ y: -10, scale: 1.02 }}
-            className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 via-white/5 to-transparent p-6 shadow-glow transition hover:-translate-y-1 hover:shadow-lg hover:shadow-brand-indigo/30"
+            className="anime-card relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/10 via-white/5 to-transparent p-6 transition"
           >
             <div className="absolute inset-0 bg-gradient-conic opacity-10" />
             <div className="relative">

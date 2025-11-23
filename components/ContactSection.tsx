@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export function ContactSection() {
   return (
-    <section id="contact" className="section-container">
+    <section id="contact" className="anime-contact section-container">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -16,13 +16,14 @@ export function ContactSection() {
       >
         <motion.span
           variants={fadeInUp}
-          className="text-sm font-semibold uppercase tracking-[0.3em] text-brand-teal"
+          className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--flat-lime)]"
         >
           Contact
         </motion.span>
         <motion.h2 variants={fadeInUp} className="section-title mt-4">
           Request a Demo
         </motion.h2>
+        <div className="title-underline" aria-hidden="true" />
         <motion.p variants={fadeInUp} className="mt-4 text-white/70">
           Share your use case and we&apos;ll map the reinforcement learning
           motion that accelerates results—from KPI design to production
@@ -95,7 +96,7 @@ export function ContactSection() {
         <motion.button
           variants={fadeInUp}
           type="submit"
-          className="w-full rounded-full bg-brand-indigo px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:bg-brand-teal"
+          className="anime-btn w-full rounded-full px-6 py-3 text-sm font-semibold"
         >
           Submit Request
         </motion.button>

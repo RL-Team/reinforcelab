@@ -13,8 +13,8 @@ import { WhyRLSection } from "@/components/WhyRLSection";
 export function HomePage() {
   return (
     <div className="relative min-h-screen overflow-hidden">
-      <div className="absolute inset-0 -z-10 bg-gradient-radial" />
       <NavBar />
+      <div className="tech-grid" aria-hidden="true" />
       <main>
         {/* --- Section: Hero --- */}
         <HeroSection />

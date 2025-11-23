@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export function WhyRLSection() {
   return (
-    <section id="why-rl" className="section-container">
+    <section id="why-rl" className="anime-section section-container">
       <motion.div
         className="mx-auto max-w-3xl text-center"
         initial="hidden"
@@ -17,13 +17,14 @@ export function WhyRLSection() {
       >
         <motion.span
           variants={fadeInUp}
-          className="text-sm font-semibold uppercase tracking-[0.3em] text-brand-teal"
+          className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--flat-lime)]"
         >
           Beyond Conventional AI Pipelines
         </motion.span>
         <motion.h2 variants={fadeInUp} className="section-title mt-4">
           Why Reinforcement Learning Now
         </motion.h2>
+        <div className="title-underline" aria-hidden="true" />
         <motion.p variants={fadeInUp} className="mt-4 text-white/70">
           Static prompts, fine-tunes, and retrospective analytics can't keep
           pace with dynamic markets. ReinforceLab builds adaptive systems that

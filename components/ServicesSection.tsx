@@ -17,13 +17,14 @@ export function ServicesSection() {
       >
         <motion.span
           variants={fadeInUp}
-          className="text-sm font-semibold uppercase tracking-[0.3em] text-brand-teal"
+          className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--flat-lime)]"
         >
           Services
         </motion.span>
         <motion.h2 variants={fadeInUp} className="section-title mt-4">
           Reinforcement Learning, Delivered End-to-End
         </motion.h2>
+        <div className="title-underline" aria-hidden="true" />
         <motion.p variants={fadeInUp} className="mt-4 text-white/70">
           Our six-part service suite spans strategy, simulation, policy
           engineering, deployment, operations, and governance—designed to move

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export function AboutVisionSection() {
   return (
-    <section id="about" className="section-container">
+    <section id="about" className="anime-section section-container">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -15,12 +15,13 @@ export function AboutVisionSection() {
         className="grid gap-10 lg:grid-cols-2"
       >
         <motion.div variants={fadeInUp} className="space-y-5">
-          <span className="text-sm font-semibold uppercase tracking-[0.3em] text-brand-teal">
+          <span className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--flat-lime)]">
             About ReinforceLab
           </span>
           <h2 className="section-title">
             Mission: Translate reward signals into durable, auditable, high-impact business value.
           </h2>
+          <div className="title-underline" aria-hidden="true" />
           <p className="text-white/70">
             ReinforceLab bridges the gap between cutting-edge RL research and
             enterprise deployment. We align cross-functional teams around

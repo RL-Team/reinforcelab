@@ -32,7 +32,7 @@ export function NavBar() {
         </nav>
         <Link
           href="#contact"
-          className="rounded-full bg-brand-indigo px-4 py-2 text-sm font-semibold text-white shadow-glow transition hover:bg-brand-teal"
+          className="anime-btn rounded-full px-4 py-2 text-sm font-semibold"
         >
           Request a Demo
         </Link>

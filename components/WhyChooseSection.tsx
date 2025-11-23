@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export function WhyChooseSection() {
   return (
-    <section id="why-choose" className="section-container">
+    <section id="why-choose" className="anime-section features section-container">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -16,12 +16,13 @@ export function WhyChooseSection() {
         className="grid gap-12 lg:grid-cols-2 lg:items-center"
       >
         <motion.div variants={fadeInUp} className="space-y-5">
-          <span className="text-sm font-semibold uppercase tracking-[0.3em] text-brand-teal">
+          <span className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--flat-lime)]">
             Why Choose ReinforceLab
           </span>
           <h2 className="section-title">
             Agentic Guardrails with measurable impact.
           </h2>
+          <div className="title-underline" aria-hidden="true" />
           <p className="text-white/70">
             The next generation of adaptive intelligence requires more than
             clever policies—it needs Agentic Guardrails that ensure safety,
@@ -51,7 +52,7 @@ export function WhyChooseSection() {
         </motion.div>
         <motion.div
           variants={fadeInUp}
-          className="glass-panel overflow-hidden rounded-3xl p-6"
+          className="anime-metrics glass-panel overflow-hidden rounded-3xl p-6"
         >
           <div className="metrics-marquee" aria-label="ReinforceLab key metrics">
             <div className="metrics-track">

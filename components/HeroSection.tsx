@@ -49,13 +49,13 @@ export function HeroSection() {
         >
           <a
             href="#contact"
-            className="rounded-full bg-brand-indigo px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:bg-brand-teal"
+            className="anime-btn rounded-full px-6 py-3 text-sm font-semibold"
           >
             Request a Demo
           </a>
           <a
             href="#services"
-            className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white/90 transition hover:border-brand-teal hover:text-white"
+            className="anime-btn rounded-full border px-6 py-3 text-sm font-semibold"
           >
             Explore Services
           </a>
