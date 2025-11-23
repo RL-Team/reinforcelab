@@ -9,10 +9,12 @@ import { ServicesSection } from "@/components/ServicesSection";
 import { SolutionsGallery } from "@/components/SolutionsGallery";
 import { WhyChooseSection } from "@/components/WhyChooseSection";
 import { WhyRLSection } from "@/components/WhyRLSection";
+import { AnimeTouch } from "@/components/AnimeTouch";
 
 export function HomePage() {
   return (
     <div className="relative min-h-screen overflow-hidden">
+      <AnimeTouch />
       <NavBar />
       <div className="tech-grid" aria-hidden="true" />
       <main>
