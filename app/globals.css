@@ -178,12 +178,10 @@ button.rounded-full:active {
 }
 
 /* Lists */
-ul li span.bg-brand-indigo,
-ul li span.bg-brand-teal,
-ul li span.bg-brand-sky,
-ul li span.bg-white\\/70 {
+ul li span[class*="bg-"] {
   box-shadow: 0 0 10px rgba(198, 255, 74, 0.6);
 }
+
 
 /* Card accents */
 .glass-panel::before,
