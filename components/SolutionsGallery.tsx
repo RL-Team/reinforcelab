@@ -45,19 +45,15 @@ export function SolutionsGallery() {
             whileHover={{ y: -10, scale: 1.02 }}
             className="anime-card anime-card-green relative overflow-hidden rounded-2xl p-6 transition"
           >
-            <div className="absolute inset-0 bg-gradient-conic opacity-10" />
             <div className="relative">
               <div className="flex items-center gap-3">
-                <span className="h-8 w-8 rounded-xl bg-brand-indigo/60" />
-                <h3 className="font-display text-lg text-white">
-                  {solution.name}
-                </h3>
+                <h3 className="font-display text-lg">{solution.name}</h3>
               </div>
-              <p className="mt-4 text-sm text-white/70">{solution.summary}</p>
-              <ul className="mt-5 space-y-3 text-sm text-white/60">
+              <p className="mt-4 text-sm">{solution.summary}</p>
+              <ul className="mt-5 space-y-3 text-sm">
                 {solution.details.map((detail) => (
                   <li key={detail} className="flex items-start gap-2">
-                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-brand-sky" />
+                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-[var(--green-border)]" />
                     <span>{detail}</span>
                   </li>
                 ))}

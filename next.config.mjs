@@ -1,10 +1,9 @@
 /** @type {import('next').NextConfig} */
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "/reinforcelab";
+// Default to no basePath for local/dev to avoid 404; allow override for hosted builds.
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 const nextConfig = {
-  // Emit a static bundle that GitHub Pages can host directly.
   output: "export",
-  // Ensure static assets load when hosted from a subdirectory (e.g., GitHub Pages).
   basePath,
   assetPrefix: basePath
 };

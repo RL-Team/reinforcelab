@@ -43,17 +43,16 @@ export function ServicesSection() {
             key={service.name}
             variants={fadeInUp}
             whileHover={{ y: -8, scale: 1.02 }}
-            className="anime-card anime-card-green glass-panel flex h-full flex-col rounded-3xl p-6"
+            className="anime-card anime-card-green glass-panel flex h-full flex-col rounded-lg p-6"
           >
             <div className="flex items-center gap-3">
-              <span className="h-10 w-10 rounded-2xl bg-white/8 ring-1 ring-white/10" />
-              <h3 className="font-display text-lg text-white">{service.name}</h3>
+              <h3 className="font-display text-lg">{service.name}</h3>
             </div>
-            <p className="mt-4 text-sm text-white/70">{service.summary}</p>
-            <ul className="mt-5 space-y-3 text-sm text-white/60">
+            <p className="mt-4 text-sm">{service.summary}</p>
+            <ul className="mt-5 space-y-3 text-sm">
               {service.details.map((detail) => (
                 <li key={detail} className="flex items-start gap-2">
-                  <span className="mt-1 h-1.5 w-1.5 rounded-full bg-brand-teal" />
+                  <span className="mt-1 h-1.5 w-1.5 rounded-full bg-[var(--green-border)]" />
                   <span>{detail}</span>
                 </li>
               ))}

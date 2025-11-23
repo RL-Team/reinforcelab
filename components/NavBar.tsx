@@ -8,7 +8,10 @@ export function NavBar() {
     <header className="anime-header-notch">
       <div className="nav-notch">
         <div className="nav-left">
-          <span className="nav-logo">π ReinforceLab</span>
+          <span className="nav-logo">
+            <span className="brand-symbol nav-pi">π</span>
+            <span className="nav-logo-text">ReinforceLab</span>
+          </span>
         </div>
 
         <nav className="nav-links">
