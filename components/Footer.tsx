@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="anime-footer">
+    <footer className="anime-footer anime-header">
       <div className="section-container flex flex-col gap-8 py-12 md:flex-row md:items-center md:justify-between text-[var(--text-dark)]">
         <div>
           <div className="flex items-center gap-3">
