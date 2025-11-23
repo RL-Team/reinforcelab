@@ -20,8 +20,8 @@ const config: Config = {
         }
       },
       fontFamily: {
-        sans: ["'Inter'", ...defaultTheme.fontFamily.sans],
-        display: ["'Sora'", ...defaultTheme.fontFamily.sans]
+        sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
+        display: ["var(--font-sora)", ...defaultTheme.fontFamily.sans]
       },
       backgroundImage: {
         "gradient-radial":
@@ -38,4 +38,3 @@ const config: Config = {
 };
 
 export default config;
-

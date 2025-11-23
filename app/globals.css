@@ -3,22 +3,28 @@
 @tailwind utilities;
 
 :root {
-  --pale-dull-white: #f7f6f2;
-  --pale-slate-orange: #e7b38b;
-  --dull-green: #a8c69f;
-  --pale-yellow: #f6e8a8;
-  --green-border: #8baf88;
-  --yellow-border: #e2d28f;
-  --text-dark: #1a1a1a;
-  --input-fill: #fefcef;
-  --input-border: #d7cfc0;
+  --font-inter: "Inter", "Helvetica Neue", sans-serif;
+  --font-sora: "Sora", "Inter", "Helvetica Neue", sans-serif;
+  --font-cinzel: "Cinzel", "Garamond", "Georgia", serif;
+  --pale-dull-white: #0f1f35;
+  --pale-slate-orange: #101820;
+  --dull-green: #28d0c8;
+  --pale-yellow: #5bd0ff;
+  --green-border: #3cf0e6;
+  --yellow-border: #3945ff;
+  --text-dark: #e8ecf5;
+  --input-fill: #14263f;
+  --input-border: #294165;
+  --flat-lime: #b7ff6a;
 }
 
 /* Global */
 body.anime-body {
-  background-color: var(--pale-dull-white);
+  background: radial-gradient(circle at 20% 20%, rgba(57, 69, 255, 0.08), transparent 35%),
+    radial-gradient(circle at 80% 0%, rgba(40, 208, 200, 0.08), transparent 30%),
+    #0b1b33;
   color: var(--text-dark);
-  font-family: "Inter", "Helvetica Neue", sans-serif;
+  font-family: var(--font-inter), "Inter", "Helvetica Neue", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -53,17 +59,18 @@ a {
 
 /* Footer */
 .anime-footer {
-  background-color: #E7B38B;
-  color: #1A1A1A;
+  background: #0d1a2c;
+  color: var(--text-dark);
   padding: 30px 20px;
-  border-top: 2px solid #DCA47E;
+  border-top: 1px solid rgba(91, 208, 255, 0.3);
+  box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.35);
 }
 
 .anime-footer a {
-  color: #1A1A1A;
+  color: var(--text-dark);
   text-decoration: none;
   margin-right: 16px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* Notched Navbar */
@@ -79,7 +86,7 @@ a {
 }
 
 .nav-notch {
-  background: var(--pale-slate-orange);
+  background: rgba(16, 24, 32, 0.88);
   border-radius: 20px;
   padding: 14px 28px;
   display: flex;
@@ -87,8 +94,11 @@ a {
   justify-content: space-between;
   width: 92%;
   max-width: 1250px;
-  border: none;
-  box-shadow: none;
+  border: 1px solid rgba(91, 208, 255, 0.25);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  transform: translateY(-24px);
+  opacity: 0;
+  animation: navEnter 0.9s ease-out 0.2s forwards;
 }
 
 .nav-logo {
@@ -103,7 +113,7 @@ a {
 }
 
 .nav-pi {
-  font-family: "Cinzel", "Garamond", "Georgia", serif;
+  font-family: var(--font-cinzel), "Cinzel", "Garamond", "Georgia", serif;
   font-size: 26px;
   line-height: 1;
   color: var(--text-dark);
@@ -128,10 +138,12 @@ a {
   color: var(--text-dark);
   padding: 6px 8px;
   border-radius: 6px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .nav-links a:hover {
-  background: var(--pale-yellow);
+  background: rgba(91, 208, 255, 0.12);
+  transform: translateY(-2px) scale(1.04);
 }
 
 .nav-right {
@@ -148,10 +160,12 @@ a {
   cursor: pointer;
   font-weight: 600;
   color: var(--text-dark);
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
 }
 
 .demo-btn:hover {
-  background: #8ebb86;
+  background: #3cf0e6;
+  box-shadow: 0 10px 30px rgba(40, 208, 200, 0.25);
 }
 
 .hamburger {
@@ -355,9 +369,20 @@ p {
   transform: translateY(-4px) scale(1.01);
 }
 
+@keyframes navEnter {
+  0% {
+    transform: translateY(-24px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /* Brand symbols */
 .brand-symbol {
-  font-family: "Cinzel", "Garamond", "Georgia", serif;
+  font-family: var(--font-cinzel), "Cinzel", "Garamond", "Georgia", serif;
   font-size: clamp(3rem, 6vw, 6rem);
   font-weight: 600;
   letter-spacing: 0.08em;

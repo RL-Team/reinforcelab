@@ -44,7 +44,7 @@ export function ContactSection() {
               type="text"
               required
               placeholder="Alex Morgan"
-              className="w-full rounded-2xl border border-white/10 bg-[var(--input-fill)] px-4 py-3 text-[var(--text-dark)] placeholder:text-[rgba(26,26,26,0.6)] focus:border-[var(--pale-yellow)] focus:outline-none"
+              className="w-full rounded-2xl border border-white/10 bg-[var(--input-fill)] px-4 py-3 text-[var(--text-dark)] placeholder:text-[rgba(232,236,245,0.7)] focus:border-[var(--pale-yellow)] focus:outline-none"
             />
           </motion.label>
           <motion.label variants={fadeInUp} className="space-y-2 text-sm">
@@ -53,7 +53,7 @@ export function ContactSection() {
               type="email"
               required
               placeholder="alex@enterprise.ai"
-              className="w-full rounded-2xl border border-white/10 bg-[var(--input-fill)] px-4 py-3 text-[var(--text-dark)] placeholder:text-[rgba(26,26,26,0.6)] focus:border-[var(--pale-yellow)] focus:outline-none"
+              className="w-full rounded-2xl border border-white/10 bg-[var(--input-fill)] px-4 py-3 text-[var(--text-dark)] placeholder:text-[rgba(232,236,245,0.7)] focus:border-[var(--pale-yellow)] focus:outline-none"
             />
           </motion.label>
         </div>
@@ -63,7 +63,7 @@ export function ContactSection() {
             type="text"
             required
             placeholder="ReinforceLab"
-            className="w-full rounded-2xl border border-white/10 bg-[var(--input-fill)] px-4 py-3 text-[var(--text-dark)] placeholder:text-[rgba(26,26,26,0.6)] focus:border-[var(--pale-yellow)] focus:outline-none"
+            className="w-full rounded-2xl border border-white/10 bg-[var(--input-fill)] px-4 py-3 text-[var(--text-dark)] placeholder:text-[rgba(232,236,245,0.7)] focus:border-[var(--pale-yellow)] focus:outline-none"
           />
         </motion.label>
         <motion.label variants={fadeInUp} className="space-y-2 text-sm">
@@ -72,17 +72,17 @@ export function ContactSection() {
             required
             className="w-full appearance-none rounded-2xl border border-white/10 bg-[var(--input-fill)] px-4 py-3 text-[var(--text-dark)] focus:border-[var(--pale-yellow)] focus:outline-none"
           >
-            <option className="text-black">Adaptive pricing &amp; revenue</option>
-            <option className="text-black">
+            <option className="text-[var(--text-dark)]">Adaptive pricing &amp; revenue</option>
+            <option className="text-[var(--text-dark)]">
               Operational optimization &amp; automation
             </option>
-            <option className="text-black">
+            <option className="text-[var(--text-dark)]">
               Personalized engagement &amp; marketing
             </option>
-            <option className="text-black">
+            <option className="text-[var(--text-dark)]">
               RL research partnership / co-development
             </option>
-            <option className="text-black">Other (include details below)</option>
+            <option className="text-[var(--text-dark)]">Other (include details below)</option>
           </select>
         </motion.label>
         <motion.label variants={fadeInUp} className="space-y-2 text-sm">
@@ -90,7 +90,7 @@ export function ContactSection() {
           <textarea
             rows={4}
             placeholder="Tell us about your current AI strategy, data sources, and success metrics."
-            className="w-full rounded-2xl border border-white/10 bg-[var(--input-fill)] px-4 py-3 text-[var(--text-dark)] placeholder:text-[rgba(26,26,26,0.6)] focus:border-[var(--pale-yellow)] focus:outline-none"
+            className="w-full rounded-2xl border border-white/10 bg-[var(--input-fill)] px-4 py-3 text-[var(--text-dark)] placeholder:text-[rgba(232,236,245,0.7)] focus:border-[var(--pale-yellow)] focus:outline-none"
           />
         </motion.label>
         <motion.button
