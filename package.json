@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next build",
-    "build:gh": "NEXT_PUBLIC_BASE_PATH=/reinforcelab-site next build && touch out/.nojekyll",
+    "build:gh": "NEXT_PUBLIC_BASE_PATH=/reinforcelab next build && touch out/.nojekyll",
     "deploy:gh": "npm run build:gh && rm -rf docs && cp -a out docs",
     "start": "next start",
     "lint": "next lint"
