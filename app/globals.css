@@ -105,6 +105,7 @@ a {
   margin: 10px;
   text-align: center;
   color: var(--text-dark);
+  box-shadow: none;
 }
 
 .metric-card::before,
@@ -188,6 +189,8 @@ p {
   box-shadow: none;
   overflow: hidden;
   padding: 1.25rem;
+  background: var(--pale-dull-white);
+  border: 2px solid var(--green-border);
 }
 
 .anime-card::before,
@@ -217,6 +220,20 @@ p {
   border-top: none;
 }
 
+.anime-card-green {
+  background-color: var(--dull-green);
+  border-color: var(--green-border);
+}
+
+.anime-card-yellow {
+  background-color: var(--pale-yellow);
+  border-color: var(--yellow-border);
+}
+
+.anime-card:hover,
+.metric-card:hover {
+  transform: translateY(-4px) scale(1.01);
+}
 .anime-card:hover,
 .metric-card:hover {
   transform: translateY(-4px) scale(1.01);
