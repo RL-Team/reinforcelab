@@ -39,7 +39,7 @@ export default function RootLayout({
             anime({
               targets: '.hero-roller-track',
               translateX: ['0%', '-50%'],
-              duration: 26000,
+              duration: 20000,
               easing: 'linear',
               loop: true
             });

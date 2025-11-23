@@ -255,6 +255,11 @@ ul li span[class*="bg-"] {
 .hero-roller-track {
   display: flex;
   gap: 1rem;
+  width: max-content;
+}
+
+.hero-roller-track .metric-card {
+  flex: 0 0 auto;
 }
 
 /* Section dividers */
