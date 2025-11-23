@@ -13,7 +13,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/reinforcelab/favicon.png" />
+        <link rel="icon" href="/reinforcelab/favicon.svg" type="image/svg+xml" />
+        <link rel="alternate icon" href="/reinforcelab/favicon.png" />
       </head>
       <body className="anime-body">
         {children}
