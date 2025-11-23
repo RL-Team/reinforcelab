@@ -316,11 +316,11 @@ p {
 .metric-card {
   position: relative;
   border-radius: 8px;
-  box-shadow: none;
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.25);
   overflow: hidden;
   padding: 1.25rem;
-  background: var(--pale-dull-white);
-  border: 2px solid var(--green-border);
+  background: rgba(11, 27, 51, 0.9);
+  border: 1px solid rgba(91, 208, 255, 0.35);
 }
 
 .anime-card::before,
@@ -351,13 +351,13 @@ p {
 }
 
 .anime-card-green {
-  background-color: var(--dull-green);
-  border-color: var(--green-border);
+  background: linear-gradient(135deg, rgba(40, 208, 200, 0.18), rgba(57, 69, 255, 0.12));
+  border-color: rgba(40, 208, 200, 0.5);
 }
 
 .anime-card-yellow {
-  background-color: var(--pale-yellow);
-  border-color: var(--yellow-border);
+  background: linear-gradient(135deg, rgba(91, 208, 255, 0.18), rgba(57, 69, 255, 0.12));
+  border-color: rgba(91, 208, 255, 0.45);
 }
 
 .anime-card:hover,
@@ -534,9 +534,9 @@ ul li span[class*="bg-"] {
 
 .hero-roller-track .metric-card {
   flex: 0 0 auto;
-  background: var(--dull-green);
-  border-color: var(--yellow-border);
-  color: var(--text-dark);
+  background: linear-gradient(145deg, rgba(11, 27, 51, 0.9), rgba(16, 33, 58, 0.85));
+  border-color: rgba(91, 208, 255, 0.35);
+  color: #f4f7fb;
 }
 
 @keyframes hero-scroll {
@@ -574,8 +574,8 @@ ul li span[class*="bg-"] {
   min-width: 14rem;
   padding: 1rem;
   border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(145deg, rgba(11, 27, 51, 0.9), rgba(16, 33, 58, 0.85));
+  border: 1px solid rgba(91, 208, 255, 0.35);
 }
 
 .metric-label {
