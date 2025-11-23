@@ -259,7 +259,14 @@ p {
 }
 
 .section-title {
-  @apply font-display text-3xl tracking-tight text-white md:text-4xl;
+  @apply font-display text-3xl tracking-tight md:text-4xl;
+  color: var(--text-dark) !important;
+  -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.25);
+}
+
+.anime-hero h1 {
+  color: var(--text-dark) !important;
+  -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.25);
 }
 
 .anime-section {
@@ -502,21 +509,6 @@ ul li span[class*="bg-"] {
   100% {
     transform: translateX(-50%);
   }
-}
-
-/* Section dividers */
-.section-container + .section-container {
-  position: relative;
-}
-
-.section-container + .section-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--dull-green), transparent);
 }
 
 /* Footer */
